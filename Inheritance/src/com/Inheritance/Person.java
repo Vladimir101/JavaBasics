@@ -1,5 +1,5 @@
 package com.Inheritance;
-// class task
+// task
 public class Person
 {
 	private String name;

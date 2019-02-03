@@ -1,5 +1,5 @@
 package com.Inheritance;
-// class task
+// task
 public class QAEngineer extends Employee
 {
 	private double signInBonus;
