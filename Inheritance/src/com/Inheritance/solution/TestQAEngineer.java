@@ -12,5 +12,4 @@ public class TestQAEngineer
 				"\ncompany: " + qa.getCompany() +
 				"\nsignin bonus: " + qa.getSignInBonus());
 	}
-
 }
