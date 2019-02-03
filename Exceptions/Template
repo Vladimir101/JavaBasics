@@ -1,0 +1,17 @@
+try
+{
+	readFromFile("myFile");
+	...
+}
+catch(FileNotFoundException e)
+{
+// Handle file not found
+}
+catch(IOException e)
+{
+// Handle read error
+}
+catch(Exception e)
+{
+// Handle all other exceptions
+}
