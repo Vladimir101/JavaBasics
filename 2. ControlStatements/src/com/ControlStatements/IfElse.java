@@ -7,13 +7,9 @@ public class IfElse
 		boolean condition = true;
 
 		if (condition)
-		{
 			System.out.println("Inside if");
-		}
 		else
-		{
 			System.out.println("Inside else");
-		}
 	}
 }
 
