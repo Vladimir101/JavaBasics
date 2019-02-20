@@ -13,9 +13,6 @@ public class StringManipulation
 // 2. print sentence in a reverse order
 		int sizeOfSentence = sentence.length();
 		for (int i = 0; i < sizeOfSentence; i++)
-			System.out.println(sentence.charAt(sizeOfSentence - 1 - i));
-		
-		for (int i = 0; i < sizeOfSentence; i++)
 			System.out.print(sentence.charAt(sizeOfSentence - 1 - i));
 		
 		System.out.println();
