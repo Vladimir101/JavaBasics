@@ -16,6 +16,6 @@ public class YourInitials
 		System.out.println(first + last);
 // Why the output is integer?
 // Solution:
-		System.out.println("" + first + last);		
+		System.out.printf("%c%c", first, last);		
 	}
 }
