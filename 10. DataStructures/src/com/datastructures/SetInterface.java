@@ -8,7 +8,7 @@ public class SetInterface
 {
 	public static void main(String[] args)
 	{
-		Set<String> hashSet = new HashSet<String>();
+		var hashSet = new HashSet<String>();
 		hashSet.add("element1");
 		hashSet.add("element2");
 		hashSet.add("element3");
@@ -31,5 +31,6 @@ public class SetInterface
 		int numberOfKeys = keys.size();
 		System.out.println("There are " + numberOfKeys + " fruits here.");
 		
+		hashSet.forEach(element -> System.out.println(element));		
 	}
 }

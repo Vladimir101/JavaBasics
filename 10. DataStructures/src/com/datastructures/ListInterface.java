@@ -1,12 +1,12 @@
 package com.datastructures;
 import java.util.ArrayList;
-import java.util.List;
 
 public class ListInterface
 {
 	public static void main(String[] args)
 	{
-		List<String> names = new ArrayList<String>();
+// Java 10 - type inference for LOCAL variables		
+		var names = new ArrayList<String>();
 		names.add("Ann");
 		names.add("Cindy");
 		System.out.println(names);
@@ -14,9 +14,12 @@ public class ListInterface
 		names.add(1, "Bob");
 		names.remove(0);
 		names.set(0, "Donald");
-		String name = names.get(1);
-		System.out.println(name);
+		String name1 = names.get(1);
+		System.out.println(name1);
 		
 		int size = names.size();
+		System.out.println("Number of elements in the list: " + size);
+// Java 8		
+		names.forEach(name -> System.out.println(name));
 	}
 }
