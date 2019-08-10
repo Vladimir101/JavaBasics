@@ -28,7 +28,14 @@ public class StringMethods
         String strVar = "Hello, Java 12";
 
 // displaying formatted string
-        System.out.printf("The formatted string: %d %f %c %s", 
+        System.out.printf("The formatted string: %d %f %c %s\n", 
         		intVar , floatVar, charVar, strVar);
+        
+        String str = new String("String");
+        String str2 = new String("String");
+        if (str == str2)
+        	System.out.println("==: Strings are equal");
+        else
+        	System.out.println("==: Strings are not equal");
 	}
 }
