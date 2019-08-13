@@ -1,5 +1,7 @@
 package com.MyStrings;
 
+import java.util.Arrays;
+
 public class StringManipulation
 {
 	public static void main(String[] args)
@@ -23,9 +25,11 @@ public class StringManipulation
 		String palindrome = "Dot saw I was Tod";
 		StringBuilder sb = new StringBuilder(palindrome);
 		sb.reverse();
-		System.out.print("\n" + sb);
+		System.out.print("\n" + sb + "\n");
 		
 // 4. convert string to array of characters
 		char[] pal = palindrome.toLowerCase().toCharArray();
+		Arrays.sort(pal);
+		System.out.println(pal); // spaces go first	
 	}
 }
