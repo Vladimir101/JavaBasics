@@ -8,4 +8,20 @@ public class MemberLevel2 extends MemberLevel
 	{
 		super(ln, fn, ag, ci);
 	}
+	
+	public void usingSuperclassVariables()
+	{
+//		privateLastName = "Reagan";
+		publicFirstName = "Ronald";
+		protectedAge = 88;
+//		defaultCity = "DC";
+	}
+	
+	public void usingSuperclassMethods()
+	{
+//		getPrivateLastName();
+		getPublicFirstName();
+		getProtectedAge();
+//		getDefaultCity();
+	}
 }
