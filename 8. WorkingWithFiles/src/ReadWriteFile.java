@@ -10,7 +10,8 @@ public class ReadWriteFile
 // read from file		
 		File readFile = new File("readfile.txt");
 		Scanner scanFile = new Scanner(readFile);
-		while(scanFile.hasNext())
+		
+		while (scanFile.hasNextLine())
 			System.out.println(scanFile.nextLine());
 		scanFile.close();
 		
