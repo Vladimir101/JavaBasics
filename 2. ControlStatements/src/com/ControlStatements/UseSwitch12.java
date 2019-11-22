@@ -1,3 +1,7 @@
+/* In the event that a full block is needed, Java 13 introduced 
+ * a new yield statement to yield a value, which becomes the value 
+ * of the enclosing switch expression.
+*/
 package com.ControlStatements;
 
 public class UseSwitch12
@@ -36,19 +40,19 @@ public class UseSwitch12
 		System.out.println();
 		
 // 3
-		System.out.println("3. Switch Expression with Break:");
+		System.out.println("3. Switch Expression with 'yield' :");
 		index = 1;
-		String caseNumberStr =
+		var caseNumberStr =
 		      switch (index)
 		      {
 		         case 1 :
-		            break "1 case";
+		        	 yield "1 case";
 		         case 2 :
-		            break "2 case";
+		        	 yield "2 case";
 		         case 3 :
-		            break "3 case";
+		        	 yield "3 case";
 		         default :
-		            break "default case";
+		        	 yield "default case";
 		      };
 		System.out.println("\tindex " + index + " ==> " + caseNumberStr);
 		System.out.println();
@@ -77,7 +81,8 @@ public class UseSwitch12
 		         	case 0 -> "0 case";
 		         	case 1, 3, 5, 7, 9 -> "odd case";
 		         	case 2, 4, 6, 8, 10 -> "even case";
-		         	default -> "default case";
+		         	default -> {String def = "default case"; 
+		         				yield def;}
 				};
 		System.out.println("\tindex " + index + " ==> " + caseNumberStr);
 		System.out.println();
@@ -93,6 +98,5 @@ public class UseSwitch12
 		default -> {System.out.println("\tThis is the first line in default");
 		            System.out.println("\tThis is the second line in default");}
 		}
-		
 	}
 }
