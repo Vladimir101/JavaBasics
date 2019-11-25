@@ -4,7 +4,7 @@
 */
 package com.ControlStatements;
 
-public class UseSwitch12
+public class UseSwitch13
 {
 	public static void main(String[] args)
 	{
