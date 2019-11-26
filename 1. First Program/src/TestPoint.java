@@ -4,7 +4,7 @@ public class TestPoint
 	{
 		Point point = new Point(3, 4);
 
-		double distance = point.distanceFromOrigin();
+		double distance = point.distance();
 		System.out.println("Distance from origin for (" +
 				point.getX() + ", " + point.getY() +
 				") is " + distance);
