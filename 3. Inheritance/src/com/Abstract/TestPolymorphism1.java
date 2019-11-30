@@ -1,6 +1,6 @@
 package com.Abstract;
 
-public class TestPolymorphism
+public class TestPolymorphism1
 {
 	public static void main(String[] args)
 	{
