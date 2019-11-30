@@ -1,4 +1,4 @@
-package com.Inheritance;
+package com.Inheritance.task;
 // task
 public class Person
 {

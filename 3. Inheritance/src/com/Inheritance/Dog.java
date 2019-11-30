@@ -10,6 +10,12 @@ public class Dog extends Animal
 		name = aName;
 		breed = aBreed;
 	}
+
+// method overriding	
+	public void eat()
+	{
+		System.out.println("Dogs eat bones");
+	}
 	
 	public void bark()
 	{

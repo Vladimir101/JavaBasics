@@ -1,4 +1,4 @@
-package com.Inheritance;
+package com.Inheritance.task;
 
 public class TestQAEngineer
 {
