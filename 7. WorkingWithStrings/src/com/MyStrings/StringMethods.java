@@ -4,6 +4,9 @@ public class StringMethods
 {
 	public static void main(String[] args)
 	{
+		char school[] = {'P', 'a', 's', 'v'};
+		String pasv = new String(school);
+		
 		String palindrome = "Madam Im Adam";
 		char ch = palindrome.charAt(2);
 		System.out.println("Char [2]: " + ch);
