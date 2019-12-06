@@ -15,7 +15,12 @@ public class Point
 		return Math.sqrt(x * x + y * y);
 	}
 
-	// distance between (x,y) and (x0,y0)
+	/**
+	 * distance between (x,y) and (x0,y0)
+	 * @param x0
+	 * @param y0
+	 * @return distance as a double
+	 */
 	public double distance(double x0, double y0)
 	{
 		return Math.sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0));
