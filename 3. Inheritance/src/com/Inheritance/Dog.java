@@ -11,7 +11,8 @@ public class Dog extends Animal
 		breed = aBreed;
 	}
 
-// method overriding	
+// method overriding
+	@Override
 	public void eat()
 	{
 		System.out.println("Dogs eat bones");
