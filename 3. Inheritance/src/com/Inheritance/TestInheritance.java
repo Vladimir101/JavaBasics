@@ -15,6 +15,7 @@ public class TestInheritance
 		animal.eat();
 		System.out.println("Dog's type: " + animal.getType());
 // 		animal.getName() - is invalid
+		((Dog)animal).getName();
 		
 		animal = new Cat("Siam");
 		animal.eat();
