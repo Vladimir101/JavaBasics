@@ -3,26 +3,23 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 // using try-with-resources concept
+// A resource is an object that must be closed after the program is finished with it. 
+// The try-with-resources statement ensures that each resource is closed at the end of the statement. 
 public class ReadWriteFile
 {
 	public static void main(String[] args)
-	{
-// read from file		
+	{		
 		File readFile = new File("readfile.txt");
-		try (Scanner scanFile = new Scanner(readFile))
+		File writeFile = new File("writeFile.txt");
+		
+		try (Scanner scanFile = new Scanner(readFile); 
+			PrintWriter printFile = new PrintWriter(writeFile))
 		{
+// read from file			
 			while (scanFile.hasNextLine())
 				System.out.println(scanFile.nextLine());
-		}
-		catch (FileNotFoundException e)
-		{
-			e.printStackTrace();
-		}
-		
-// write into a file
-		File writeFile = new File("writeFile.txt");
-		try(PrintWriter printFile = new PrintWriter(writeFile))
-		{
+			
+// write into a file			
 			printFile.println("My first string");
 			printFile.println("My first string");
 			printFile.print("My first string");
@@ -31,5 +28,18 @@ public class ReadWriteFile
 		{
 			e.printStackTrace();
 		}
+		
+
+
+		/*
+		 * try(PrintWriter printFile = new PrintWriter(writeFile))
+		 * {
+		 * 
+		 * }
+		 * catch (FileNotFoundException e)
+		 * {
+		 * e.printStackTrace();
+		 * }
+		 */
 	}
 }
