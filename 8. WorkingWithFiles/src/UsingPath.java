@@ -2,6 +2,7 @@
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 import java.util.Arrays;
 
 public class UsingPath
@@ -25,7 +26,9 @@ public class UsingPath
 				"My second string.", "My third string.");
         Files.write(writeFile, iterable);
         
-// write a string		
-		Files.writeString(writeFile, "one string");
+// write line by line	
+		Files.writeString(writeFile, "1 string");
+		Files.writeString(writeFile, "\n2 string", StandardOpenOption.APPEND);
+		Files.writeString(writeFile, "\n3 string", StandardOpenOption.APPEND);
 	}
 }
