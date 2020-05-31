@@ -28,18 +28,5 @@ public class ReadWriteFile
 		{
 			e.printStackTrace();
 		}
-		
-
-
-		/*
-		 * try(PrintWriter printFile = new PrintWriter(writeFile))
-		 * {
-		 * 
-		 * }
-		 * catch (FileNotFoundException e)
-		 * {
-		 * e.printStackTrace();
-		 * }
-		 */
 	}
 }
