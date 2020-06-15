@@ -23,6 +23,7 @@ public class ListInterface
 		System.out.println("Number of elements in the list: " + size);
 // Java 8		
 		names.forEach(name -> System.out.println(name));
+		
 		List<String> list = Arrays.asList("Vlad", "Tony", "Boris", "Sofya");
 		System.out.println(list);
 	}
