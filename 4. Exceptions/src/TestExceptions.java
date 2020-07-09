@@ -23,5 +23,9 @@ public class TestExceptions
 		{
 			System.out.println(e);
 		}
+		finally
+		{
+			System.out.println("I'm finally here");
+		}
 	}
 }
