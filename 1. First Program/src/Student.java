@@ -8,17 +8,21 @@ public class Student
 		System.out.println("I am eating sushi!");
 	}
 	
+// test with the default constructor
+	
 // add getters & setters
 	
-// add non-default constructor
+// add the non-default constructor
 	public Student(String n, String g)
 	{
 		name = n;
 		gender = g;
 	}
 
+// add the default constructor	
 	public Student()
 	{
-		// TODO Auto-generated constructor stub
+		name = "Adam";
+		gender = "male";
 	}
 }
