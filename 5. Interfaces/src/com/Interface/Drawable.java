@@ -8,4 +8,9 @@ interface Drawable
 	{
 		System.out.println("drawing with black pen");
 	}
+	
+	static void drawing()
+	{
+		System.out.println("drawing in static method");
+	}
 }
