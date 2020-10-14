@@ -4,6 +4,7 @@ public class TestDrawable
 {
 	public static void main(String[] args)
 	{
+		Drawable.drawing();
 // runtime polymorphism		
 		Drawable dr = new Circle();
 		dr.draw();
