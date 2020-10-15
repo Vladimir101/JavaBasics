@@ -1,5 +1,6 @@
 package com.datastructures;
 import java.util.HashMap;
+import java.util.Map;
 
 public class MapInterface
 {
@@ -22,5 +23,10 @@ public class MapInterface
 			System.out.println("There is 1 dog here.");
 		
 		animals.forEach((k, v) -> System.out.println(k + " = " + v));
+		
+		Map zoo = Map.of("dog", 1,
+				"horse", 2,
+				"rabbit", 68);
+		System.out.println(zoo.get("horse"));
 	}
 }
