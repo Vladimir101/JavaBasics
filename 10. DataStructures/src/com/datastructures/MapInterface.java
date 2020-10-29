@@ -24,9 +24,10 @@ public class MapInterface
 		
 		animals.forEach((k, v) -> System.out.println(k + " = " + v));
 		
-		Map zoo = Map.of("dog", 1,
+		Map<String, Integer> zoo = Map.of("dog", 1,
 				"horse", 2,
 				"rabbit", 68);
-		System.out.println(zoo.get("horse"));
+		int numberOfHorses = zoo.get("horse");
+		System.out.println("Number of horses in zoo: " + numberOfHorses);
 	}
 }
