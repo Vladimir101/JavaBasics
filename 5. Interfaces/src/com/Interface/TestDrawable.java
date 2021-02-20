@@ -13,5 +13,4 @@ public class TestDrawable
 		dr = new Square();
 		dr.draw();
 	}
-
 }
