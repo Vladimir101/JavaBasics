@@ -8,6 +8,7 @@ public class TestZoo
 		zoo.add(new Dog("Small dog", "Tuzik", "Chihuahua"));
 		zoo.add(new Cat("Siam"));
 		System.out.println("Index of the next empty cage: " + zoo.getNextEmptyCage());
+		
 		zoo.feed();
 	}
 }
