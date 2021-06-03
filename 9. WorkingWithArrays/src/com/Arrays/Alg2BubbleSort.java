@@ -5,15 +5,24 @@ public class Alg2BubbleSort
 	public void bubbleSort(int[] array)
 	{
 		int temp;
+		boolean sort = true;
 		
 		for (int j = array.length - 1; j >= 1; j--)
+		{
 			for (int i = 0; i < j; i++)
+			{
 				if (array[i] > array[i + 1])
 				{
 					temp = array[i + 1];
 					array[i + 1] = array[i];
 					array[i] = temp;
+					sort = false;
 				}
+			}			
+			if (sort == true) // if array is already sorted
+				break;
+		}
+		
 		for (int a : array)
 			System.out.println(a);
 	}
