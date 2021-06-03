@@ -4,15 +4,15 @@ public class Alg2BubbleSort
 {
 	public void bubbleSort(int[] array)
 	{
-		int arrLength = array.length;
+		int temp;
 		
-		for (int j = arrLength - 1; j >= 1; j--)
+		for (int j = array.length - 1; j >= 1; j--)
 			for (int i = 0; i < j; i++)
 				if (array[i] > array[i + 1])
 				{
-					int var = array[i + 1];
+					temp = array[i + 1];
 					array[i + 1] = array[i];
-					array[i] = var;
+					array[i] = temp;
 				}
 		for (int a : array)
 			System.out.println(a);
