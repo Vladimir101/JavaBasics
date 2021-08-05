@@ -1,5 +1,6 @@
 public class Addition
 {
+// method overloading
 	public int add(int a, int b)
 	{
 		return a + b;
