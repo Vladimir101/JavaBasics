@@ -23,6 +23,10 @@ public class Loops
 
 		// for loop
 		for (int i = 1; i < 11; i++)
+		{
 			System.out.println("Count is: " + i);
+			if (i == 6)
+				break;
+		}
 	}
 }
