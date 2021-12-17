@@ -24,6 +24,8 @@ public class Loops
 		// for loop
 		for (int i = 1; i < 11; i++)
 		{
+			if (i == 3)
+				continue;
 			System.out.println("Count is: " + i);
 			if (i == 6)
 				break;
